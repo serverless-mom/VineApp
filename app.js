@@ -6,9 +6,9 @@
 function customersController($scope,$http) {
     $http({
         method: 'GET',
-        url: 'json/customers.json'
+        url: 'json/catVines.json'
     }).success(function(data) {
-        $scope.customers = data; // response data
+        $scope.customers = data.data.records; // response data
         $scope.albums = [];
     });
 }
