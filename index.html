@@ -4,11 +4,11 @@
 <body>
 
 <div ng-app="" ng-controller="customersController">
-
     <table>
-        <tr ng-repeat="x in customers">
-            <td>{{ x.videoDashUrl }}</td>
-            <td>{{ x.userId }}</td>
+        <tr ng-repeat="vine in vines">
+            <td><h1 ng-bind="vine.description"></h1></td>
+            <td><img ng-src="{{vine.thumbnailUrl}}" /></td>
+
         </tr>
     </table>
 
